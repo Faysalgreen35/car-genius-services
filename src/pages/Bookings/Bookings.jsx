@@ -89,15 +89,54 @@ const Bookings = () => {
     }
 
     return (
-        <div>
-            <h2 className="text-5xl"> Your Bookings{bookings.length}</h2>
-            <div className="overflow-x-auto w-full text-left ">  
-                <table className="table w-full text-left flex justify-start">
+        // <div>
+        //     <h2 className="text-5xl"> Your Bookings{bookings.length}</h2>
+        //     <div className="overflow-x-auto w-full text-left ">  
+        //         <table className="table w-full text-left flex justify-start">
 
-                    <thead className="w-full text-left mr-4">
-                        <tr className="w-full  text-left">
+        //             <thead className="w-full text-left mr-4">
+        //                 <tr className="w-full  text-left">
                             
-                            <th>x</th>
+        //                     <th>x</th>
+        //                     <th>Image</th>
+        //                     <th>Service</th>
+        //                     <th>Date</th>
+        //                     <th>Price</th>
+        //                     <th>Status</th>
+        //                 </tr>
+        //             </thead>
+        //             <tbody className="w-full flex-1">
+
+        //                 {
+        //                     bookings.map(booking => <BookingsRow
+        //                         key={booking._id}
+        //                         booking={booking}
+        //                         handleDelete={handleDelete}
+        //                         handleBookingConfirm={handleBookingConfirm}
+        //                     >
+
+        //                     </BookingsRow>)
+        //                 }
+
+        //             </tbody>
+
+        //         </table>
+        //     </div>
+
+
+        // </div>
+        <div>
+            <h2 className="text-5xl">Your bookings: {bookings.length}</h2>
+            <div className="overflow-x-auto w-full">
+                <table className="table w-full">
+                    {/* head */}
+                    <thead className="bg-black text-white text-3xl">
+                        <tr>
+                            <th className=" ">
+                                <label>
+                                    <input type="checkbox" className="checkbox" />
+                                </label>
+                            </th>
                             <th>Image</th>
                             <th>Service</th>
                             <th>Date</th>
@@ -105,25 +144,19 @@ const Bookings = () => {
                             <th>Status</th>
                         </tr>
                     </thead>
-                    <tbody className="w-full flex-1">
-
+                    <tbody>
                         {
                             bookings.map(booking => <BookingsRow
                                 key={booking._id}
                                 booking={booking}
                                 handleDelete={handleDelete}
                                 handleBookingConfirm={handleBookingConfirm}
-                            >
-
-                            </BookingsRow>)
+                            ></BookingsRow>)
                         }
-
                     </tbody>
 
                 </table>
             </div>
-
-
         </div>
     );
 };

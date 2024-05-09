@@ -4,7 +4,7 @@ Car Genius is a web application that helps users book servicing for their cars c
 
 ## Live Links
 
-- Client: [Link to live client](#)
+- Client: [https://car-genius-18058.web.app](#)
 - Server: [https://car-genius-server-omega.vercel.app](#)
 
 
@@ -38,7 +38,7 @@ To run the project locally, follow these steps:
 2. Install dependencies:
 
 
-3. Start the development server:
+3. Start the development server: npm run dev
 
 
 4. Open your browser and navigate to http://localhost:3000 to view the application.
