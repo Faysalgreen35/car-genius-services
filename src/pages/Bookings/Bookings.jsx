@@ -126,8 +126,8 @@ const Bookings = () => {
 
         // </div>
         <div>
-            <h2 className="text-5xl">Your bookings: {bookings.length}</h2>
-            <div className="overflow-x-auto w-full">
+            <h2 className="text-5xl ml-12">Your bookings: {bookings.length}</h2>
+            <div className="overflow-x-auto w-full m-12">
                 <table className="table w-full">
                     {/* head */}
                     <thead className="bg-black text-white text-3xl">
